@@ -33,9 +33,18 @@
     "prettier-eslint-cli": "^4.7.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "stylelint": "^12.0.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "tailwindcss": "^1.1.4"
   },
   "dependencies": {
-    "gatsby-image": "^2.0.41"
+    "autoprefixer": "^9.7.3",
+    "classnames": "^2.2.6",
+    "eslint-plugin-postcss-modules": "^1.1.2",
+    "gatsby-image": "^2.0.41",
+    "gatsby-plugin-linaria": "^2.0.0",
+    "gatsby-plugin-purgecss": "^4.0.1",
+    "linaria": "^1.3.1"
   }
 }

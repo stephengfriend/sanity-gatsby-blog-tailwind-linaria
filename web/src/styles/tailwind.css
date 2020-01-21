@@ -1,0 +1,55 @@
+/*
+  Inject Tailwind's base styles and use the Tailwind Macro with emotion to use
+  the rest of Tailwind's classes in the project
+*/
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+html {
+  box-sizing: border-box;
+  @apply font-sans text-base leading-none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  @apply bg-white text-black m-0;
+}
+
+html,
+body,
+body > div,
+body > div > div {
+  height: 100%;
+}
+
+@responsive {
+  .shadow-y {
+    box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.1), 0 -1px 2px 0 rgba(0, 0, 0, 0.06),
+      0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+  .shadow-y-md {
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.06),
+      0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  .shadow-y-lg {
+    box-shadow: 0 -10px 15px -3px rgba(0, 0, 0, 0.1), 0 -4px 6px -2px rgba(0, 0, 0, 0.05),
+      0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  .shadow-y-xl {
+    box-shadow: 0 -20px 25px -5px rgba(0, 0, 0, 0.1), 0 -10px 10px -5px rgba(0, 0, 0, 0.04),
+      0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  .shadow-y-2xl {
+    box-shadow: 0 -25px 50px -12px rgba(0, 0, 0, 0.25), 0 -25px 50px -12px rgba(0, 0, 0, 0.25),
+      0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+}

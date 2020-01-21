@@ -7,8 +7,6 @@ import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 
-import {responsiveTitle1} from '../components/typography.module.css'
-
 export const query = graphql`
   query ArchivePageQuery {
     posts: allSanityPost(
@@ -51,7 +49,7 @@ const ArchivePage = props => {
     <Layout>
       <SEO title='Archive' />
       <Container>
-        <h1 className={responsiveTitle1}>Archive</h1>
+        <h1 className='font-semibold text-1xl leading-normal mt-4 mx-0 mb-8 md:text-2xl lg:text-3xl md:leading-relaxed lg:leading-loose'>Archive</h1>
         {postNodes && postNodes.length > 0 && <BlogPostPreviewGrid nodes={postNodes} />}
       </Container>
     </Layout>

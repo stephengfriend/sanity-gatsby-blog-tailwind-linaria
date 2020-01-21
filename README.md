@@ -1,6 +1,6 @@
-# Test Blog with Gatsby
+# Blog with Gatsby, Sanity.io, Tailwind CSS, & Linaria.js
 
-_Fully customizable blog template with a React.js front-end._
+_Fully customizable blog template with a React.js front-end. Incorporates Tailwind CSS & Linaria.js for styling._
 
 Deployed from [sanity.io/create](https://www.sanity.io/create/?template=sanity-io%2Fsanity-template-gatsby-blog).
 
